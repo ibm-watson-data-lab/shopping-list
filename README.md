@@ -8,6 +8,16 @@ Shopping List is a series of Offline First demo apps, each built using a differe
 * Hybrid mobile apps
 * Native mobile apps
 
+## Purposes
+
+These demo apps will each serve multiple purposes:
+
+* Reference Implementations
+* Live Demos
+* Tutorials
+* Workshops
+* [Developer Journeys](https://developer.ibm.com/code/journey/)
+
 ## Implementations
 
 ### Vanilla JS and PouchDB
