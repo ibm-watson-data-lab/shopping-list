@@ -12,49 +12,49 @@ Shopping List is a series of Offline First demo apps, each built using a differe
 
 ### Vanilla JS and PouchDB
 
-![Progressive Web App](img/pwa-logo.svg) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-vanilla-js-pouchdb
 
 ### Polymer and PouchDB
 
-![Progressive Web App](img/pwa-logo.svg) ![Polymer](img/polymer-logo.svg) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png) ![Polymer](img/polymer-logo.png) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb
 
 ### React and PouchDB
 
-![Progressive Web App](img/pwa-logo.svg) ![React](img/react-logo.svg) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png) ![React](img/react-logo.png) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb
 
 ### Preact and PouchDB
 
-![Progressive Web App](img/pwa-logo.svg) ![Preact](img/preact-logo.jpg) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png) ![Preact](img/preact-logo.jpg) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb
 
 ### Vue.js and PouchDB
 
-![Progressive Web App](img/pwa-logo.svg) ![Vue.js](img/vuejs-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png) ![Vue.js](img/vuejs-logo.png) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-vue-js-pouchdb
 
 ### React Native and PouchDB
 
-![React Native](img/react-native-logo.svg) ![PouchDB](img/pouchdb-logo.png)
+![React Native](img/react-native-logo.png) ![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-native-pouchdb
 
 ### React Native and Cloudant Sync
 
-![React Native](img/react-native-logo.svg)
+![React Native](img/react-native-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync
