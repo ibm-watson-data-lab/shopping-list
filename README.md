@@ -12,42 +12,42 @@ Shopping List is a series of Offline First demo apps, each built using a differe
 
 ### Vanilla JS and PouchDB
 
-![Progressive Web App](img/pwa-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-vanilla-js-pouchdb
 
 ### Polymer and PouchDB
 
-![Progressive Web App](img/pwa-logo.png) ![Polymer](img/polymer-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Polymer](img/polymer-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb
 
 ### React and PouchDB
 
-![Progressive Web App](img/pwa-logo.png) ![React](img/react-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![React](img/react-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb
 
 ### Preact and PouchDB
 
-![Progressive Web App](img/pwa-logo.png) ![Preact](img/preact-logo.jpg) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Preact](img/preact-logo.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb
 
 ### Vue.js and PouchDB
 
-![Progressive Web App](img/pwa-logo.png) ![Vue.js](img/vuejs-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Vue.js](img/vuejs-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-vue-js-pouchdb
 
 ### React Native and PouchDB
 
-![React Native](img/react-native-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![React Native](img/react-native-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-native-pouchdb
@@ -61,7 +61,7 @@ https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync
 
 ### Ionic and PouchDB
 
-![Ionic](img/ionic-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Ionic](img/ionic-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-ionic-pouchdb
@@ -75,7 +75,7 @@ https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync
 
 ### Cordova and PouchDB
 
-![Cordova](img/cordova-logo.png) ![PouchDB](img/pouchdb-logo.png)
+![Cordova](img/cordova-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-cordova-pouchdb
