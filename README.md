@@ -90,7 +90,7 @@ https://github.com/ibm-watson-data-lab/shopping-list-react-native-pouchdb
 
 ### React Native and Cloudant Sync
 
-![React Native](img/react-native-logo.png)
+![React Native](img/react-native-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync
@@ -104,7 +104,7 @@ https://github.com/ibm-watson-data-lab/shopping-list-ionic-pouchdb
 
 ### Ionic and Cloudant Sync
 
-![Ionic](img/ionic-logo.png) 
+![Ionic](img/ionic-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync
@@ -118,14 +118,15 @@ https://github.com/ibm-watson-data-lab/shopping-list-cordova-pouchdb
 
 ### Cordova and Cloudant Sync
 
-![Cordova](img/cordova-logo.png)
+![Cordova](img/cordova-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync
 
 ### Swift and Cloudant Sync
 
-![Swift](img/swift-logo.png)
+![Swift](img/swift-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
+
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-swift-cloudant-sync
