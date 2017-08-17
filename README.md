@@ -127,6 +127,5 @@ https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync
 
 ![Swift](img/swift-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
 
-
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-swift-cloudant-sync
