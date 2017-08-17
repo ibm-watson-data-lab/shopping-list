@@ -7,6 +7,7 @@ Shopping List is a series of Offline First demo apps, each built using a differe
 * Progressive Web Apps
 * Hybrid mobile apps
 * Native mobile apps
+* Desktop apps
 
 ## Purposes
 
@@ -81,6 +82,13 @@ https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb
 
+### Ember.js and PouchDB
+
+![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Ember.js](img/emberjs-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb
+
 ### React Native and PouchDB
 
 ![React Native](img/react-native-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
@@ -129,3 +137,17 @@ https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync
 
 GitHub Repository:  
 https://github.com/ibm-watson-data-lab/shopping-list-swift-cloudant-sync
+
+### Kotlin and Cloudant Sync
+
+![Kotlin](img/kotlin-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Cloudant Sync](img/cloudant-sync-logo.png)
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-kotlin-cloudant-sync
+
+### Electron and PouchDB
+
+![Electron](img/electron-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-electron-pouchdb
