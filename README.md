@@ -51,7 +51,7 @@ Shopping List is a simple demo app, with a limited feature set. Here is a list o
 ![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
-https://github.com/ibm-watson-data-lab/shopping-list-vanilla-js-pouchdb
+https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb
 
 ### Polymer and PouchDB
 
@@ -79,7 +79,7 @@ https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb
 ![Progressive Web App](img/pwa-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Vue.js](img/vuejs-logo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![PouchDB](img/pouchdb-logo.png)
 
 GitHub Repository:  
-https://github.com/ibm-watson-data-lab/shopping-list-vue-js-pouchdb
+https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb
 
 ### React Native and PouchDB
 
