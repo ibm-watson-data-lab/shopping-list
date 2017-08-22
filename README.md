@@ -285,3 +285,10 @@ Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/fi
   }
 }
 ```
+
+## Templates
+
+See the `templates` directory for templates that can be used for each demo app implementation. This includes the following files:
+
+* `LICENSE`
+* `README.md`
