@@ -163,9 +163,24 @@ Implementations of the Shopping List demo app share a data model. This allows th
   "_id": "list:cj6mj1zfj000001n1ugjfkj33",
   "type": "list",
   "version": 1,
-  "mapFeature": "77309276",
   "title": "Groceries",
   "checked": false,
+  "place": {
+    "title": "Healthy Living",
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+    "lat": "44.46282415",
+    "lon": "-73.1799710198028",
+    "address": {
+      "supermarket": "Healthy Living",
+      "road": "Dorset Street",
+      "city": "South Burlington",
+      "county": "Chittenden County",
+      "state": "Vermont",
+      "postcode": "05406",
+      "country": "United States of America",
+      "countryCode": "us"
+    }
+  },
   "createdAt": "2017-08-21T18:40:00.000Z",
   "updatedAt": "2017-08-21T18:40:00.000Z"
 }
@@ -178,9 +193,12 @@ Notes:
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `list` for a shopping list).
 * `version`: Document schema version.
-* `mapFeature`: Identifier for the map feature (e.g. grocery store) associated with the shopping list.
 * `title`: User-generated title for the shopping list.
 * `checked`: Has this shopping list been fully checked off?
+* `place`: Associates the shopping list with a geolocation. Derived from OpenStreetMap's [Nominatim](http://wiki.openstreetmap.org/wiki/Nominatim) search tool. The example above is derived from the following search:  
+```
+http://nominatim.openstreetmap.org/search/Healthy%20Living%20Vermont?format=json&addressdetails=1&namedetails=1
+```
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
 * `updatedAt`: Date and time at which the document was last updated. Expressed as a simplified extended ISO format in zero UTC offset.
 
@@ -227,67 +245,15 @@ Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/fi
 
 Note that the above query can also be used to get a count of items within a shopping list by simply using the `Array.length` property (or equivalent) and accounting for the shopping list document being included in the results. Since PouchDB just runs every reduce function in memory, there is no benefit to using a `_count` reduce function when using PouchDB. The Cloudant Sync libraries for iOS and Android do not support map/reduce (but do support Cloudant Query / Mango).
 
-### Map Feature Example
-
-Map features are derived from OpenStreetMap's [Nominatim](http://wiki.openstreetmap.org/wiki/Nominatim) search tool and are used for associating a shopping list with a geolocation. The following example is derived from the search:
-
-```
-http://nominatim.openstreetmap.org/search/Healthy%20Living%20Vermont?format=json&addressdetails=1&namedetails=1
-```
-
-```javascript
-{
-  "_id": "map-feature:77309276",
-  "type": "map-feature",
-  "version": 1,
-  "createdAt": "2017-08-21T18:40:00.000Z",
-  "updatedAt": "2017-08-21T18:40:00.000Z",
-  "nominatim": {
-    "place_id": "77309276",
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
-    "osm_type": "way",
-    "osm_id": "30729839",
-    "boundingbox": [
-      "44.4625931",
-      "44.4631202",
-      "-73.1803907",
-      "-73.1795354"
-    ],
-    "lat": "44.46282415",
-    "lon": "-73.1799710198028",
-    "display_name": "Healthy Living, Dorset Street, South Burlington, Chittenden County, Vermont, 05406, United States of America",
-    "class": "shop",
-    "type": "supermarket",
-    "importance": 0.311,
-    "icon": "http://nominatim.openstreetmap.org/images/mapicons/shopping_supermarket.p.20.png",
-    "address": {
-      "supermarket": "Healthy Living",
-      "road": "Dorset Street",
-      "city": "South Burlington",
-      "county": "Chittenden County",
-      "state": "Vermont",
-      "postcode": "05406",
-      "country": "United States of America",
-      "country_code": "us"
-    },
-    "namedetails": {
-      name: "Healthy Living"
-    }
-  }
-}
-```
-
 ### Geolocation Context Example
 
-A geolocation context is used to notify the user when the geolocation capability of their device has indicated that they are near a map feature associated with a shopping list. This provides the user with quick access to the shopping list for their current geographic context.
+A geolocation context is used to notify the user when the geolocation capability of their device has indicated that they are near a place associated with a shopping list. This provides the user with quick access to the shopping list for their current geographic context.
 
 ```javascript
 {
-  "_id": "geo-context:drguywpyxp4t:cj6mrfiv2000001n4gfykixw3",
-  "type": "geo-context",
+  "_id": "geo:drguywpyxp4t:list:cj6mj1zfj000001n1ugjfkj33",
+  "type": "geo",
   "version": 1,
-  "list": "cj6mj1zfj000001n1ugjfkj33",
-  "mapFeature": "77309276",
   "notified": false,
   "createdAt": "2017-08-21T18:57:00.000Z",
   "updatedAt": "2017-08-21T18:57:00.000Z"
@@ -297,13 +263,12 @@ A geolocation context is used to notify the user when the geolocation capability
 Notes:
 
 * `_id`: Unique identifier for the document. Generated from the following values, separated by colons:
-  * Document type (`geo-context`).
-  * Geohash of the `nominatim.lat` and `nominatim.lon` values from the associated map feature at a precision of 12 (which can be generated in JavaScript using the [`latlon-geohash`](https://www.npmjs.com/package/latlon-geohash) module).
-  * [Collision-resistant ID (cuid)](https://usecuid.org/).
-* `type`: Document type (will always have a value of `geo-context` for a geolocation context item).
+  * Document type (`geo`).
+  * Geohash of the `place.lat` and `place.lon` values from the associated shopping list at a precision of 12 (which can be generated in JavaScript using the [`latlon-geohash`](https://www.npmjs.com/package/latlon-geohash) module).
+  * Shopping list document type (`list`).
+  * [Collision-resistant ID (cuid)](https://usecuid.org/) of the associated shopping list document.
+* `type`: Document type (will always have a value of `geo` for a geolocation context item).
 * `version`: Document schema version.
-* `list`: Identifier for the shopping list associated with the geolocation context.
-* `mapFeature`: Identifier for the map feature (e.g. grocery store) associated with the geolocation context.
 * `notified`: Has a notification already been sent for this geolocation context? Note that the geolocation context document may be deleted after a notification has been sent and the corresponding shopping list has been fully checked off.
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
 * `updatedAt`: Date and time at which the document was last updated. Expressed as a simplified extended ISO format in zero UTC offset.
@@ -314,8 +279,8 @@ Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/fi
 {
   "selector": {
     "_id": {
-      "$gte": "geo-context:drguyw",
-      "$lte": "geo-context:drguyw\uffff"
+      "$gte": "geo:drguyw",
+      "$lte": "geo:drguyw\uffff"
     }
   }
 }
