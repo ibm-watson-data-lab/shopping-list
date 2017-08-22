@@ -163,6 +163,7 @@ Implementations of the Shopping List demo app share a data model. This allows th
   "_id": "list:cj6mj1zfj000001n1ugjfkj33",
   "type": "list",
   "version": 1,
+  "mapFeature": "77309276",
   "title": "Groceries",
   "checked": false,
   "createdAt": "2017-08-21T18:40:00.000Z",
@@ -177,6 +178,7 @@ Notes:
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `list` for a shopping list).
 * `version`: Document schema version.
+* `mapFeature`: Identifier for the map feature (e.g. grocery store) associated with the shopping list.
 * `title`: User-generated title for the shopping list.
 * `checked`: Has this shopping list been fully checked off?
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
@@ -210,15 +212,20 @@ Notes:
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
 * `updatedAt`: Date and time at which the document was last updated. Expressed as a simplified extended ISO format in zero UTC offset.
 
-The built-in `_all_docs` view can be used to query a shopping list and all of its list items together:
+Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/find.html) / [`pouchdb-find`](https://pouchdb.com/guides/mango-queries.html) / [Cloudant Query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html) selector that utilizes the built-in `_all_docs` view to query a shopping list and all of its list items together:
 
 ```javascript
 {
-  "include_docs": true,
-  "startkey": "list:cj6mj1zfj000001n1ugjfkj33",
-  "endkey": "list:cj6mj1zfj000001n1ugjfkj33:\ufff0"
+  "selector": {
+    "_id": {
+      "$gte": "list:cj6mj1zfj000001n1ugjfkj33",
+      "$lte": "list:cj6mj1zfj000001n1ugjfkj33:\uffff"
+    }
+  }
 }
 ```
+
+Note that the above query can also be used to get a count of items within a shopping list by simply using the `Array.length` property (or equivalent) and accounting for the shopping list document being included in the results. Since PouchDB just runs every reduce function in memory, there is no benefit to using a `_count` reduce function when using PouchDB. The Cloudant Sync libraries for iOS and Android do not support map/reduce (but do support Cloudant Query / Mango).
 
 ### Map Feature Example
 
@@ -297,39 +304,19 @@ Notes:
 * `version`: Document schema version.
 * `list`: Identifier for the shopping list associated with the geolocation context.
 * `mapFeature`: Identifier for the map feature (e.g. grocery store) associated with the geolocation context.
-* `notified`: Has a notification already been sent for this geolocation context?
+* `notified`: Has a notification already been sent for this geolocation context? Note that the geolocation context document may be deleted after a notification has been sent and the corresponding shopping list has been fully checked off.
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
 * `updatedAt`: Date and time at which the document was last updated. Expressed as a simplified extended ISO format in zero UTC offset.
 
-The built-in `_all_docs` view can be used to query for geolocation contexts near the current geolocation coordinates of the device (the value `drguyw` below is the geohash of the user's location at a precision of 6, or ±0.61 km):
+Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/find.html) / [`pouchdb-find`](https://pouchdb.com/guides/mango-queries.html) / [Cloudant Query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html) selector that utilizes the built-in `_all_docs` view to query for geolocation contexts near the current geolocation coordinates of the device (the value `drguyw` below is the geohash of the user's location at a precision of 6, or ±0.61 km):
 
 ```javascript
 {
-  "include_docs": true,
-  "startkey": "geo-context:drguyw",
-  "endkey": "geo-context:drguyw\ufff0"
-}
-```
-
-The following map function can be used to "join" a shopping list with its associated map feature using the [linked documents](http://docs.couchdb.org/en/2.0.0/couchapp/views/joins.html#linked-documents) feature of CouchDB and its variants:
-
-```javascript
-function map(doc) {
-  if (doc.type && doc.type == "geo-context" && doc.list) {
-    const listId = "list:" + doc.list;
-    emit(listId, { _id: listId });
-    if (doc.mapFeature) {
-      emit(listId, { _id: "map-feature:" + doc.mapFeature });
+  "selector": {
+    "_id": {
+      "$gte": "geo-context:drguyw",
+      "$lte": "geo-context:drguyw\uffff"
     }
   }
-}
-```
-
-The view generated from the above map function can then be used to query a shopping list and its associated map feature:
-
-```javascript
-{
-  "include_docs": true,
-  "key": "list:cj6mj1zfj000001n1ugjfkj33"
 }
 ```
