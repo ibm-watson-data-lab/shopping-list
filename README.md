@@ -2,6 +2,8 @@
 
 **Note:** This is a work in progress.
 
+<img src="img/mockup-01.png" alt="Mockup 01" width="270" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mockup-02.png" alt="Mockup 02" width="270" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mockup-03.png" alt="Mockup 03" width="270" />
+
 Shopping List is a series of Offline First demo apps, each built using a different stack. These demo apps cover:
 
 * Progressive Web Apps
