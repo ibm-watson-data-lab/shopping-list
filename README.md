@@ -288,6 +288,28 @@ Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/fi
 }
 ```
 
+## Style Guides
+
+General guidelines:
+
+* Where possible, a consistent style is maintained between the different demo app implementations.
+* Where there is a style that is common for a particular type of application we defer to that style.
+
+Implementations:
+
+* **Vanilla JS:** [Bootstrap](http://getbootstrap.com/)
+* **Polymer:** Material Design (using [Polymer App Toolbox](https://www.polymer-project.org/2.0/toolbox/))
+* **React:** Material Design (using [Material-UI](http://www.material-ui.com/))
+* **Preact:** Material Design (using [preact-material-components](https://github.com/prateekbh/preact-material-components))
+* **Vue.js:** Material Design (using [Vuetify](https://vuetifyjs.com/))
+* **Ember.js:** [Bootstrap](http://getbootstrap.com/)
+* **React Native:** iOS Design Themes or Material Design (depending on the target platform)
+* **Ionic:** iOS Design Themes or Material Design (depending on the target platform)
+* **Cordova:** iOS Design Themes or Material Design (depending on the target platform)
+* **Swift:** iOS Design Themes
+* **Kotlin:** Material Design
+* **Electron:** [Photon](http://photonkit.com/)
+
 ## Templates
 
 See the `templates` directory for templates that can be used for each demo app implementation. This includes the following files:
