@@ -8,8 +8,36 @@ Shopping List is a series of Offline First demo apps, each built using a differe
 
 ## Table of Contents
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Purposes](#purposes)
+- [Features](#features)
+- [Implementations](#implementations)
+  - [Vanilla JS and PouchDB](#vanilla-js-and-pouchdb)
+  - [Polymer and PouchDB](#polymer-and-pouchdb)
+  - [React and PouchDB](#react-and-pouchdb)
+  - [Preact and PouchDB](#preact-and-pouchdb)
+  - [Vue.js and PouchDB](#vuejs-and-pouchdb)
+  - [Ember.js and PouchDB](#emberjs-and-pouchdb)
+  - [React Native and PouchDB](#react-native-and-pouchdb)
+  - [React Native and Cloudant Sync](#react-native-and-cloudant-sync)
+  - [Ionic and PouchDB](#ionic-and-pouchdb)
+  - [Ionic and Cloudant Sync](#ionic-and-cloudant-sync)
+  - [Cordova and PouchDB](#cordova-and-pouchdb)
+  - [Cordova and Cloudant Sync](#cordova-and-cloudant-sync)
+  - [Swift and Cloudant Sync](#swift-and-cloudant-sync)
+  - [Kotlin and Cloudant Sync](#kotlin-and-cloudant-sync)
+  - [Electron and PouchDB](#electron-and-pouchdb)
+- [Interoperability](#interoperability)
+  - [Shopping List Example](#shopping-list-example)
+  - [Shopping List Item Example](#shopping-list-item-example)
+  - [Geolocation Context Example](#geolocation-context-example)
+- [Style Guides](#style-guides)
+- [Templates](#templates)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Purposes
 
