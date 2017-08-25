@@ -34,6 +34,10 @@ Shopping List is a series of Offline First demo apps, each built using a differe
   - [Shopping List Example](#shopping-list-example)
   - [Shopping List Item Example](#shopping-list-item-example)
   - [Geolocation Context Example](#geolocation-context-example)
+- [Domain Model Implementations](#domain-model-implementations)
+  - [JavaScript](#javascript)
+  - [Swift](#swift)
+  - [Kotlin](#kotlin)
 - [Style Guides](#style-guides)
 - [Templates](#templates)
 
@@ -315,6 +319,23 @@ Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/fi
   }
 }
 ```
+
+## Domain Model Implementations
+
+### JavaScript
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-model-js
+
+### Swift
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-model-swift
+
+### Kotlin
+
+GitHub Repository:  
+https://github.com/ibm-watson-data-lab/shopping-list-model-kotlin
 
 ## Style Guides
 
