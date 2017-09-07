@@ -346,18 +346,18 @@ General guidelines:
 
 Implementations:
 
-* **Vanilla JS:** [Bootstrap](http://getbootstrap.com/)
+* **Vanilla JS:** Material Design (using [MDC-Web](https://material.io/components/web/))
 * **Polymer:** Material Design (using [Polymer App Toolbox](https://www.polymer-project.org/2.0/toolbox/))
 * **React:** Material Design (using [Material-UI](http://www.material-ui.com/))
 * **Preact:** Material Design (using [preact-material-components](https://github.com/prateekbh/preact-material-components))
-* **Vue.js:** Material Design (using [Vuetify](https://vuetifyjs.com/))
-* **Ember.js:** [Bootstrap](http://getbootstrap.com/)
+* **Vue.js:** Material Design (using [Vue Material](http://vuematerial.io/))
+* **Ember.js:** Material Design (using [MDC-Web](https://material.io/components/web/))
 * **React Native:** iOS Design Themes or Material Design (depending on the target platform)
 * **Ionic:** iOS Design Themes or Material Design (depending on the target platform)
 * **Cordova:** iOS Design Themes or Material Design (depending on the target platform)
 * **Swift:** iOS Design Themes
 * **Kotlin:** Material Design
-* **Electron:** [Photon](http://photonkit.com/)
+* **Electron:** Material Design (using [MDC-Web](https://material.io/components/web/))
 
 ## Templates
 
