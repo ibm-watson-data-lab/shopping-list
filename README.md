@@ -254,8 +254,6 @@ http://nominatim.openstreetmap.org/search/Healthy%20Living%20Vermont?format=json
 Notes:
 
 * `_id`: Unique identifier for the document. Generated from the following values, separated by colons:
-  * Parent document type (`list`).
-  * [Collision-resistant ID (cuid)](https://usecuid.org/) of the parent document.
   * Document type (`item`).
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `item` for a shopping list item).
@@ -266,15 +264,13 @@ Notes:
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
 * `updatedAt`: Date and time at which the document was last updated. Expressed as a simplified extended ISO format in zero UTC offset.
 
-Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/find.html) / [`pouchdb-find`](https://pouchdb.com/guides/mango-queries.html) / [Cloudant Query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html) selector that utilizes the built-in `_all_docs` view to query a shopping list and all of its list items together:
+Here is an example of a [Mango](http://docs.couchdb.org/en/2.1.0/api/database/find.html) / [`pouchdb-find`](https://pouchdb.com/guides/mango-queries.html) / [Cloudant Query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html) selector that fetches a single shopping list's items:
 
 ```javascript
 {
   "selector": {
-    "_id": {
-      "$gte": "list:cj6mj1zfj000001n1ugjfkj33",
-      "$lte": "list:cj6mj1zfj000001n1ugjfkj33:\uffff"
-    }
+    "type": "item",
+    "list": "list:cj6mj1zfj000001n1ugjfkj33"
   }
 }
 ```
