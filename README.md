@@ -240,8 +240,9 @@ http://nominatim.openstreetmap.org/search/Healthy%20Living%20Vermont?format=json
 
 ```javascript
 {
-  "_id": "list:cj6mj1zfj000001n1ugjfkj33:item:cj6mn7e36000001p9n14fgk6s",
+  "_id": "item:cj6mn7e36000001p9n14fgk6s",
   "type": "item",
+  "list": "list:cj6mj1zfj000001n1ugjfkj33",
   "version": 1,
   "title": "Mangos",
   "checked": false,
@@ -258,6 +259,7 @@ Notes:
   * Document type (`item`).
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `item` for a shopping list item).
+* `list`: The ID of this item's shopping list
 * `version`: Document schema version.
 * `title`: User-generated title for the shopping list item.
 * `checked`: Has this shopping list item been checked off?
