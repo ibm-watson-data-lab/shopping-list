@@ -257,7 +257,7 @@ Notes:
   * Document type (`item`).
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `item` for a shopping list item).
-* `list`: The ID of this item's shopping list
+* `list`: The unique identifier of the parent shopping list
 * `version`: Document schema version.
 * `title`: User-generated title for the shopping list item.
 * `checked`: Has this shopping list item been checked off?
