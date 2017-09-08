@@ -6,6 +6,18 @@
 
 Shopping List is a series of Offline First demo apps, each built using a different stack. These demo apps cover Progressive Web Apps, hybrid mobile apps, native mobile apps, and desktop apps.
 
+The Shopping List demo apps are brought to you by:
+
+* [Va Barbosa](https://github.com/vabarbosa)
+* [Glynn Bird](https://github.com/glynnbird)
+* [Juan Camacho](https://github.com/jcamach2)
+* [Bradley Holt](https://github.com/bradley-holt)
+* [Maureen McElaney](https://github.com/mmcelaney)
+* [Lorna Jane Mitchell](https://github.com/lornajane)
+* [Raj Singh](https://github.com/rajrsingh)
+* [Patrick Titzler](https://github.com/ptitzler)
+* [Mark Watson](https://github.com/markwatsonatx)
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
