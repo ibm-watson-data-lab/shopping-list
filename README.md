@@ -12,6 +12,7 @@ The Shopping List demo apps are brought to you by:
 * [Glynn Bird](https://github.com/glynnbird)
 * [Juan Camacho](https://github.com/jcamach2)
 * [Bradley Holt](https://github.com/bradley-holt)
+* [Nick Kasten](https://github.com/kastentx)
 * [Maureen McElaney](https://github.com/mmcelaney)
 * [Lorna Jane Mitchell](https://github.com/lornajane)
 * [Raj Singh](https://github.com/rajrsingh)
