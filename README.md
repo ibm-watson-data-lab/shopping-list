@@ -255,8 +255,8 @@ http://nominatim.openstreetmap.org/search/Healthy%20Living%20Vermont?format=json
 {
   "_id": "item:cj6mn7e36000001p9n14fgk6s",
   "type": "item",
-  "list": "list:cj6mj1zfj000001n1ugjfkj33",
   "version": 1,
+  "list": "list:cj6mj1zfj000001n1ugjfkj33",
   "title": "Mangos",
   "checked": false,
   "createdAt": "2017-08-21T18:43:00.000Z",
@@ -270,8 +270,8 @@ Notes:
   * Document type (`item`).
   * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `item` for a shopping list item).
-* `list`: The unique identifier of the parent shopping list
 * `version`: Document schema version.
+* `list`: The unique identifier of the parent shopping list
 * `title`: User-generated title for the shopping list item.
 * `checked`: Has this shopping list item been checked off?
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
