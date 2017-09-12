@@ -296,8 +296,9 @@ A geolocation context is used to notify the user when the geolocation capability
 
 ```javascript
 {
-  "_id": "geo:drguywpyxp4t:list:cj6mj1zfj000001n1ugjfkj33",
+  "_id": "geo:drguywpyxp4t:cj6mn7e36000001p1q02dlz5q",
   "type": "geo",
+  "list": "list:cj6mj1zfj000001n1ugjfkj33",
   "version": 1,
   "notified": false,
   "createdAt": "2017-08-21T18:57:00.000Z",
@@ -310,9 +311,9 @@ Notes:
 * `_id`: Unique identifier for the document. Generated from the following values, separated by colons:
   * Document type (`geo`).
   * Geohash of the `place.lat` and `place.lon` values from the associated shopping list at a precision of 12 (which can be generated in JavaScript using the [`latlon-geohash`](https://www.npmjs.com/package/latlon-geohash) module).
-  * Shopping list document type (`list`).
-  * [Collision-resistant ID (cuid)](https://usecuid.org/) of the associated shopping list document.
+  * [Collision-resistant ID (cuid)](https://usecuid.org/).
 * `type`: Document type (will always have a value of `geo` for a geolocation context item).
+* `list`: The unique identifier of the parent shopping list
 * `version`: Document schema version.
 * `notified`: Has a notification already been sent for this geolocation context? Note that the geolocation context document may be deleted after a notification has been sent and the corresponding shopping list has been fully checked off.
 * `createdAt`: Date and time at which the document was created. Expressed as a simplified extended ISO format in zero UTC offset (which can be generated in JavaScript with `new Date().toISOString()`).
