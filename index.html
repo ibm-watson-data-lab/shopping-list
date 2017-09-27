@@ -1,15 +1,36 @@
 ---
 layout: default
-title:  Offline First shopping list app sample implementations
+title:  Offline First sample implementations
 id:     how-tos
 ---
 
-<h3>{{ page.title }}</h3>
+  {% assign how_tos = site.how_tos | sort: 'title' %}
 
-  {% assign how_tos = site.how_tos | sort: 'type' %}
+   <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">{{ page.title }}</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#dta">Desktop Apps</a></li>
+        <li class="tab"><a href="#hma">Hybrid Mobile Apps</a></li>
+        <li class="tab"><a href="#nma">Native Mobile Apps</a></li>
+        <li class="tab"><a href="#pwa">Progressive Web Apps</a></li>
+      </ul>
+    </div>
+   </nav>
 
-  {% for how_to in how_tos %}
-    <div class="section">
+  <div id="dta" class="col s12">
+   {% for how_to in how_tos %}
+    {% if how_to.type == 'Desktop App' %}
+     <div class="section">
       <h5>{{ how_to.title }}</h5>
       <p>{{ how_to.headline }}</p>
       <p>Application type: {{how_to.type}} </p>
@@ -18,7 +39,65 @@ id:     how-tos
        <p>Tutorial: <a href="{{how_to.tutorial_url}}">{{how_to.tutorial_url}}</a> </p>
       {% endif %}
       <p>Author: <a href="{{how_to.author_url}}">{{how_to.author}}</a> </p>
-    </div>
-    <div class="divider"></div>
-  {% endfor %} 
+     </div>
+     <div class="divider"></div>
+    {% endif %}
+   {% endfor %} 
+  </div>
+
+  <div id="hma" class="col s12">
+   {% for how_to in how_tos %}
+    {% if how_to.type == 'Hybrid Mobile App' %}
+     <div class="section">
+      <h5>{{ how_to.title }}</h5>
+      <p>{{ how_to.headline }}</p>
+      <p>Application type: {{how_to.type}} </p>
+      <p>Source code: <a href="{{how_to.repo_url}}">{{how_to.repo_url}}</a> </p>
+      {% if how_to.tutorial_url != null %}
+       <p>Tutorial: <a href="{{how_to.tutorial_url}}">{{how_to.tutorial_url}}</a> </p>
+      {% endif %}
+      <p>Author: <a href="{{how_to.author_url}}">{{how_to.author}}</a> </p>
+     </div>
+     <div class="divider"></div>
+    {% endif %}
+   {% endfor %} 
+  </div>
+
+  <div id="nma" class="col s12">
+   {% for how_to in how_tos %}
+    {% if how_to.type == 'Native Mobile App' %}
+     <div class="section">
+      <h5>{{ how_to.title }}</h5>
+      <p>{{ how_to.headline }}</p>
+      <p>Application type: {{how_to.type}} </p>
+      <p>Source code: <a href="{{how_to.repo_url}}">{{how_to.repo_url}}</a> </p>
+      {% if how_to.tutorial_url != null %}
+       <p>Tutorial: <a href="{{how_to.tutorial_url}}">{{how_to.tutorial_url}}</a> </p>
+      {% endif %}
+      <p>Author: <a href="{{how_to.author_url}}">{{how_to.author}}</a> </p>
+     </div>
+     <div class="divider"></div>
+    {% endif %}
+   {% endfor %} 
+  </div>
+
+
+  <div id="pwa" class="col s12">
+   {% for how_to in how_tos %}
+    {% if how_to.type == 'Progressive Web App' %}
+     <div class="section">
+      <h5>{{ how_to.title }}</h5>
+      <p>{{ how_to.headline }}</p>
+      <p>Application type: {{how_to.type}} </p>
+      <p>Source code: <a href="{{how_to.repo_url}}">{{how_to.repo_url}}</a> </p>
+      {% if how_to.tutorial_url != null %}
+       <p>Tutorial: <a href="{{how_to.tutorial_url}}">{{how_to.tutorial_url}}</a> </p>
+      {% endif %}
+      <p>Author: <a href="{{how_to.author_url}}">{{how_to.author}}</a> </p>
+     </div>
+     <div class="divider"></div>
+    {% endif %}
+   {% endfor %} 
+  </div>
+
   
