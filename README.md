@@ -1,2 +1,2 @@
-# GitHub pages for Offline First shopping app sample implementations
+### GitHub pages for https://ibm-watson-data-lab.github.io/shopping-list/
 
