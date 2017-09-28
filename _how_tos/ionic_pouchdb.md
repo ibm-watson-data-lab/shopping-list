@@ -1,6 +1,6 @@
 ---
 title:      Ionic and PouchDB
-headline:   Learn how to build an Offline First app using Ionic and PouchDB
+headline:   Learn how to build an Offline First app using <a href="http://ionicframework.com">Ionic</a> and <a href="https://pouchdb.com">PouchDB</a>
 repo_url:   https://github.com/ibm-watson-data-lab/shopping-list-ionic-pouchdb
 tutorial_url: 
 type: Hybrid Mobile App
