@@ -16,6 +16,7 @@ The Shopping List demo apps are brought to you by:
 * [Maureen McElaney](https://github.com/mmcelaney)
 * [Lorna Jane Mitchell](https://github.com/lornajane)
 * [Raj Singh](https://github.com/rajrsingh)
+* [Mark Sturdevant](https://github.com/markstur)
 * [Patrick Titzler](https://github.com/ptitzler)
 * [Mark Watson](https://github.com/markwatsonatx)
 
