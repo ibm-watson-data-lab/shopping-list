@@ -1,79 +1,190 @@
-# Shopping List
+To use this template, view as plain text (it contains comments), then edit as appropriate (start by deleting this line!)
 
-**Note:** This is a work in progress.
+<!--Put badges at the very top -->
+<!--change the repos -->
+<!--change the tracking number -->
+[![Build Status](https://travis-ci.org/IBM/watson-banking-chatbot.svg?branch=master)](https://travis-ci.org/IBM/watson-banking-chatbot)
+![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/527357940ca5e1027fbf945add3b15c4/badge.svg)
 
-Shopping List is an Offline First demo [Progressive Web App | hybrid mobile app | native mobile app | desktop app] built using [Vanilla JS | Polymer | React | Preact | Vue.js | Ember.js | React Native | Ionic | Cordova | Swift | Kotlin | Electron] and [PouchDB | Cloudant Sync]. [Mult-user / multi-device capabilities are enabled by Hoodie.] [This app is part of a series of Offline First demo apps, each built using a different stack.](https://github.com/ibm-watson-data-lab/shopping-list) 
+<!-- fill in the blanks -->
+# Create an Offline First Shopping List with [technologies]
 
-## Quick Start
+In this code pattern, we will create an Offline First shopping list. Shopping List is an Offline First demo Progressive Web App built using [technologies]. [This app is part of a series of Offline First demo apps, each built using a different stack.](https://github.com/ibm-watson-data-lab/shopping-list).
 
-\<Instructions on getting the app up and running quickly\>
+When the reader has completed this Code Pattern, they will understand how to:
 
-## Features
+* [goal 1]
+* [goal 2]
+* [goal 3]
+* [goal 4]
 
-Shopping List is a simple demo app, with a limited feature set. Here is a list of features written as user stories grouped by Epic:
+<!--Remember to dump an image in this path-->
+![](doc/source/images/architecture.png)
 
-* Planning
-  * As a \<person planning to shop for groceries\>, I want to \<create a shopping list\> so that \<I can add items to this shopping list\>.
-  * As a \<person planning to shop for groceries\>, I want to \<add an item to my shopping list\> so that \<I can remember to buy that item when I am at the grocery store later\>.
-  * As a \<person planning to shop for groceries\>, I want to \<remove an item from my shopping list\> so that \<I can change my mind on what to buy when I am at the grocery store later\>.
-* Shopping
-  * As a \<person shopping for groceries\>, I want to \<view items on my shopping list\> so that \<I can remember what items to buy\>.
-  * As a \<person shopping for groceries\>, I want to \<add an item to my shopping list\> so that \<I can remember to buy that item\>.
-  * As a \<person shopping for groceries\>, I want to \<remove an item from my shopping list\> so that \<I can change my mind on what to buy\>.
-  * As a \<person shopping for groceries\>, I want to \<check off an item on my shopping list\> so that \<I can keep track of what items I have bought\>.
-* Offline First
-  * As a \<person shopping for groceries\>, I want to \<have the app installed on my device\> so that \<I can continue to utilize my shopping list when no internet connection is available\>.
-  * As a \<person shopping for groceries\>, I want to \<have my shopping list stored locally on my device\> so that \<I can continue to utilize my shopping list when no internet connection is available\>.
-  * As a \<person shopping for groceries\>, I want to \<sync my shopping list with the cloud\> so that \<I can manage and utilize my shopping list on multiple devices\>.
-* Multi-User / Multi-Device
-  * As a \<new user\>, I want to \<sign up for the app\> so that \<I can use the app\>.
-  * As an \<existing user\>, I want to \<sign in to the app\> so that \<I can use the app\>.
-  * As an \<existing user\>, I want to \<sign out of the app\> so that \<I can protect my privacy\>.
-* Geolocation
-  * As a \<person planning to shop for groceries\>, I want to \<associate a shopping list with a grocery store\> so that \<I can be notified of this shopping list when I am physically at that grocery store\>.
-  * As a \<person associating a shopping list with a physical store\>, I want to \<access previously-used locations\> so that \<I can quickly find the physical store for which I am searching\>.
-  * As a \<person shopping for groceries\>, I want to \<be notified of a shopping list when I am physically at the grocery store associated with that shopping list\> so that \<I can quickly find the shopping list for my current context\>.
+## Flow
+<!--Add new flow steps based on the architecture diagram-->
+1. Step 1.
+2. Step 2.
+3. Step 3.
+4. Step 4.
+5. Step 5.
 
-## App Architecture
+<!--Update this section-->
+## Included components
+Select components from [here](https://github.ibm.com/developer-journeys/journey-docs/tree/master/_content/dev#components), copy and paste the raw text for ease
+* [Component](link): description
+* [Component](link): description
 
-\<Information detailing the app architecture; for using this app as a reference implementation\>
+<!--Update this section-->
+## Featured technologies
+Select components from [here](https://github.ibm.com/developer-journeys/journey-docs/tree/master/_content/dev#technologies), copy and paste the raw text for ease
+* [Technology](link): description
+* [Technology](link): description
 
-## Live Demo
+# Steps
+* [Deploy to IBM Cloud](#deploy-to-bluemix) **OR** [Run locally](#run-locally)
+* [Database and replication setup](#database-and-replication-setup)
 
-\<Instructions on using the app as a live demo\>
+## Deploy to IBM Cloud
+<!--Update the repo and tracking id-->
+[![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/5c5df69e10058d49cdc1f4d2fc63ce31/button.svg)](https://bluemix.net/deploy?repository=https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb)
 
-## Tutorial
+1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
-### Table of Contents
+1. In Toolchains, click on Delivery Pipeline to watch while the app is deployed. Once deployed, the app can be viewed by clicking `View app`.
 
-* Prerequisite Knowledge & Skills
-* Key Concepts
-* Initial Set Up
-* Creating the [Vanilla JS | Polymer | React | Preact | Vue.js | Ember.js | React Native | Ionic | Cordova | Swift | Kotlin | Electron] App
-* Adding a [PouchDB | Cloudant Sync] Database
-* Syncing Data
-  * Configure a Database
-     * Option 1: Apache CouchDB
-     * Option 2: IBM Cloudant
-     * Option 3: Cloudant Developer Edition
-  * Configure Remote Database Credentials
-  * Trigger Database Replication
-* Adding Multi-User / Multi-Device Features with Hoodie
-  * Installing Hoodie
-  * Configuring Hoodie
-  * Using the Hoodie Store API
-  * Using Hoodie Account API
-  * Testing Offline Sync
-* Adding Gelocation Features
-* What's next?
-  * Other Features
-  * Get Involved in the Offline First Community!
-  * Further Reading and Resources
+1. To see the app and services created and configured for this code pattern, use the IBM Cloud dashboard. The app is named [app-name] with a unique suffix. The following services are created and easily identified by the [chosen prefix] prefix:
+    * prefix-Service1
+    * prefix-Service2
 
-## Workshop
+## Run locally
+> NOTE: These steps are only needed when running locally instead of using the ``Deploy to IBM Cloud`` button.
 
-\<Information on a slide deck available for delivering a workshop based on this app\>
+<!-- there are MANY updates necessary here, just screenshots where appropriate -->
 
-## Developer Journey
+1. [Clone the repo](#1-clone-the-repo)
+1. [Install the prerequisites](#2-install-the-prerequisites)
+1. [Run the server](#3-run-the-server)
+1. [Create a Cloudant or CouchDB service](#4-create-a-cloudant-or-couchdb-service)
 
-\<Information about any [Developer Journeys](https://developer.ibm.com/code/journey/) that reference this app\>
+### 1. Clone the repo
+
+Clone the `shopping-list-polymer-pouchdb` locally. In a terminal, run:
+
+```
+$ git clone https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb
+```
+
+### 2. Install the prerequisites
+
+First, install [Polymer CLI](https://github.com/Polymer/polymer-cli) using [npm](https://www.npmjs.com/) (we assume you have pre-installed [Node.js](https://nodejs.org/)):
+
+    npm install --global polymer-cli
+
+Second, install [Bower](https://bower.io/) using [npm](https://www.npmjs.com):
+
+    npm install --global bower
+
+Third, install the [Bower npm resolver](https://github.com/mjeanroy/bower-npm-resolver):
+
+    npm install --global bower-npm-resolver
+
+### 3. Run the server
+
+This command serves the app at `http://127.0.0.1:8081` and provides basic URL routing for the app:
+
+    polymer serve
+
+### 4. Create a Cloudant or CouchDB service
+
+PouchDB can synchronize with CouchDB and compatible servers. To run and test locally, you can install CouchDB. Alternatively, you can use a hosted Cloudant NoSQL DB service for your remote DB.
+
+#### Installing Apache CouchDB
+
+[Install CouchDB 2.1](http://docs.couchdb.org/en/2.1.0/install/index.html). Instructions are available for installing CouchDB 2.1 on Unix-like systems, on Windows, on Mac OS X, on FreeBSD, and via other methods.
+
+Configure CouchDB for a [single-node setup](http://docs.couchdb.org/en/2.1.0/install/setup.html#single-node-setup), as opposed to a cluster setup. Once you have finished setting up CouchDB, you should be able to access CouchDB at `http://127.0.0.1:5984/`. Ensure that CouchDB is running and take note of your admin username and password.
+
+#### Creating a Cloudant NoSQL DB service
+
+Sign up for an [IBM Cloud](https://console.ng.bluemix.net/) account, if you do not already have one.
+
+Once you are logged in to IBM Cloud, create a new Cloudant instance on the [Cloudant NoSQL DB Bluemix Catalog](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db) page. This should take you to a page representing the newly-created service instance. Click the "Service credentials" link. You should have one set of service credentials listed. Click "View credentials" which should show you a JSON object containing your service credentials. Copy the value for the `url` key to your clipboard (the value will be in the form of `https://username:password@uniqueid-bluemix.cloudant.com`).
+
+## Database and replication setup
+1. [Create the remote database](#1-create-the-remote-database)
+1. [Enable CORS](#2-enable-cors)
+1. [Set the replication target](#3-set-the-replication-target)
+
+### 1. Create the remote database
+
+Use your Cloudant or CouchDB dashboard to create a database. Select the Databases icon on the left and then use the `Create Database` button to create the "shopping-list" database.
+The Shopping List app can be used locally before the database exists, but cannot sync
+until the remote database is completed.
+
+![](doc/source/images/create_db.png)
+
+### 2. Enable CORS
+
+Cross-Origin Resource Sharing (CORS) needs to be enabled. Use your Cloudant or CouchDB dashboard to enable it. The CORS options are under the account settings or config depending on your version. Enable CORS and restrict the domain as needed for security.
+
+![](doc/source/images/enable_cors.png)
+
+### 3. Set the replication target
+
+Run the Shopping List app and use the `Replicator` form to enter your Database URL.
+If you use the Bluemix Cloudant URL taken from the service credentials as described above, the URL includes user and password GUIDs.
+
+Add `/shopping-list` to the URL to connect to the database that you created.
+
+![](doc/source/images/replicator.png)
+
+<!--Edit as appropriate, update screenshot-->
+# Using the app
+
+The app allows you to create a shopping list by clicking on the plus sign. Click on the list to see its items. Then, you can add items to the list by clicking the plus sign. There is a checkbox to allow you to mark the items complete as you buy load up your cart.
+
+When you have not configured your Replication Target or when you are offline, the lists will not sync. One good way to test this is to run two browsers. You can use Chrome and Firefox and have different lists in each.
+
+When you go online and have the database and CORS enabled and the Replication Target is set, the shopping lists will sync. You will then be able to use both lists from either browser.
+
+![](doc/source/images/shopping_lists.png)
+
+## Running the app
+
+## Running the tests
+
+## Deploying to GitHub Pages
+
+# Privacy Notice
+
+Refer to https://github.com/IBM/metrics-collector-service#privacy-notice.
+
+## Disabling Deployment Tracking
+
+To disable tracking, simply remove ``require('metrics-tracker-client').track();`` from the ``app.js`` file in the top level directory.
+
+<!--Include any relevant links-->
+
+# Links
+* [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg)
+* [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
+* [Relevancy Training Demo Video](https://www.youtube.com/watch?v=8BiuQKPQZJk)
+* [Relevancy Training Demo Notebook](https://github.com/akmnua/relevancy_passage_bww)
+
+<!-- pick the relevant ones from below -->
+# Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **PowerAI**: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: [IBM Power Systems](https://www.ibm.com/ms-en/marketplace/deep-learning-platform)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
+* **Kubernetes on IBM Cloud**: Deliver your apps with the combined the power of [Kubernetes and Docker on IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/containers)
+
+<!--keep this-->
+
+# License
+[Apache 2.0](LICENSE)
