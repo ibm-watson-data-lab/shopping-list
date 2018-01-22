@@ -167,6 +167,8 @@ To disable tracking, simply remove ``require('metrics-tracker-client').track();`
 <!--Include any relevant links-->
 
 # Links
+* [More Shopping List Sample Apps](https://github.com/ibm-watson-data-lab/shopping-list)
+<!--Keep the link to the main repo (above) in your list. Replace the ones below with links relevant to your specific project.-->
 * [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg)
 * [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
 * [Relevancy Training Demo Video](https://www.youtube.com/watch?v=8BiuQKPQZJk)
