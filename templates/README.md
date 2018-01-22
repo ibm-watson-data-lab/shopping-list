@@ -175,7 +175,7 @@ To disable tracking, simply remove ``require('metrics-tracker-client').track();`
 * [Web App Manifest](https://w3c.github.io/manifest/)
 * [PouchDB](https://pouchdb.com/)
 * [Apache CouchDB](https://couchdb.apache.org/)
-* [IBM Cloudant](https://cloudant.com/)
+* [IBM Cloudant](https://www.ibm.com/cloud/cloudant)
 * [Materialize CSS](http://materializecss.com/getting-started.html)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
