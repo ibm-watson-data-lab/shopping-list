@@ -2,15 +2,16 @@ To use this template, view as plain text (it contains comments), then edit as ap
 
 <!--Put badges at the very top -->
 <!-- Travis CI: change the repos (required) -->
-<!-- Metrics collection: Follow the setup instructions for the appropriate client in https://github.com/IBM/metrics-collector-service  (required) -->
-<!-- remove metrics badge if no metrics collection is performed --> 
+<!-- Metrics collection: Follow the setup instructions for the appropriate client in https://github.com/IBM/metrics-collector-service (required) -->
+<!-- remove metrics badge if no metrics collection is performed -->
 [![Build Status](https://travis-ci.org/IBM/watson-banking-chatbot.svg?branch=master)](https://travis-ci.org/IBM/watson-banking-chatbot)
 ![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/527357940ca5e1027fbf945add3b15c4/badge.svg)
 
 <!-- fill in the blanks -->
 # Create an Offline First Shopping List with [technologies]
 
-This code pattern is a reference implementation of an Offline First shopping list app, built as a Progressive Web App using [technology](technologyURL). [This app is part of a series of Offline First demo apps, each built using a different stack.](https://github.com/ibm-watson-data-lab/shopping-list).
+<!--Adjust this paragraph if your implementation is NOT a PWA. -->
+This code pattern is a reference implementation of an Offline First shopping list app, built as a Progressive Web App using [technology](technologyURL). [This app is part of a series of Offline First demo apps, each built using a different stack](https://github.com/ibm-watson-data-lab/shopping-list).
 
 When the reader has completed this Code Pattern and explored the code in this GitHub repository, they will understand how to:
 
@@ -55,18 +56,18 @@ So what sets this app apart? Its Offline First architecture. The Offline First a
 PouchDB, CouchDB, and Service Worker are the primary tools that turn our simple shopping list app into a high performance, offline-capable Progressive Web App.
 
 <!--Adjust this paragraph if your implementation does NOT use PouchDB. -->
-**Data stays safe on your device, even while it's offline.**  
+**Data stays safe on your device, even while it's offline.**
 Persistance of shopping lists and item data entered by the user is achieved using the in-browser database PouchDB. This will allow your data to survive between sessions and when disconnected from the network. (Whether you remember that you need juice while you're on your trusty home Wi-Fi or in the middle of the wilderness, you can still add it your list.)
 
-**Data syncs between devices when a connection is available.**  
+**Data syncs between devices when a connection is available.**
 When a connection is available, the data is synced from the local device to a CouchDB database in the cloud, and can thus be shared across multiple devices or users. (Need to share your grocery list with your roommate or access it on both your phone and your laptop? No problem!)
 
 <!--Adjust this paragraph if your implementation does NOT use Service Worker. -->
-**The app loads quickly, even while offline.**  
+**The app loads quickly, even while offline.**
 To keep the app itself functional while offline, a Service Worker is used to cache page resources (the most important HTML, CSS, and JavaScript files) when the web application is first visited. Each device must have a connection for this first visit, after which the app will be fully functional even while offline or in shoddy network conditions. (No more error messages or frustratingly slow page loads.)
 
 <!--Adjust this paragraph if your implementation is NOT a PWA. -->
-**The app can be installed on a mobile device.**  
+**The app can be installed on a mobile device.**
 In combination with the Service Worker used for caching, a manifest file containing metadata allows the app to become a Progressive Web App, an enhanced website that can be installed on a mobile device and can then be used with or without an internet connection. (It's secretly still a website, but you can access it through one of those handy dandy little app icons on your homescreen!)
 
 Explore the code in this GitHub repository to see how the Offline First design is applied.
@@ -75,7 +76,7 @@ Explore the code in this GitHub repository to see how the Offline First design i
 <!--Correct tutorial link if one exists for your repository. Otherwise, remove this section. -->
 Refer to the [tutorial](https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb/tree/master/tutorial) for step-by-step instructions on how to build your own Offline First shopping list Progressive Web App with Vanilla JS (aka plain old JavaScript) and PouchDB.
 
-# Live demo 
+# Live demo
 <!--Correct live demo link if one exists for your repository. Otherwise, remove this section. -->
 To see this app in action without installing anything, simply visit https://ibm-watson-data-lab.github.io/shopping-list-vanillajs-pouchdb/ in a web browser or on your mobile device.
 
@@ -103,7 +104,7 @@ This app can be deployed to IBM Cloud. You can also run this app on your local m
 ## Run locally
 > NOTE: These steps are only needed when running locally instead of using the ``Deploy to IBM Cloud`` button.
 
-<!-- there are MANY updates necessary here, just screenshots where appropriate -->
+<!-- there are MANY updates necessary here, change the steps then walk through in detail with screenshots where appropriate -->
 
 1. [Clone the repo](#1-clone-the-repo)
 1. [Install the prerequisites](#2-install-the-prerequisites)
@@ -163,7 +164,7 @@ To provision a managed Cloudant NoSQL DB
 * Log in to [IBM Cloud](https://console.ng.bluemix.net/).
    > Sign up for an account, if you do not already have one.
 * [Provision a Cloudant NoSQL DB _Lite_ plan instance](https://console.bluemix.net/catalog/services/cloudant-nosql-db), which is free.
-  > If desired, you can also re-use an existing Cloudant NoSQL DB service instance. (Open the [**Data & Analytics**  resources dashboard](https://console.bluemix.net/dashboard/data) to see a list of pre-provisioned instances that you have access to.) 
+  > If desired, you can also re-use an existing Cloudant NoSQL DB service instance. (Open the [**Data & Analytics** resources dashboard](https://console.bluemix.net/dashboard/data) to see a list of pre-provisioned instances that you have access to.)
  * Open the **Service credentials** tab.
 * Add new credentials for this service instance if no credentials have been defined yet.
 * View the credentials and note the value of the **url** property, which has the following format: `https://username:password@username-bluemix.cloudant.com`.
@@ -188,7 +189,7 @@ until the remote database is completed.
 
 ### 2. Enable CORS
 
-* Open the Cloudant or CouchDB dashboard to enable Cross-Origin Resource Sharing (CORS).  
+* Open the Cloudant or CouchDB dashboard to enable Cross-Origin Resource Sharing (CORS).
 
 * Select the Account Settings (or config) tab and open the **CORS** tab.
 
@@ -226,10 +227,10 @@ This project does not, at present, have any automated tests. If you'd like to co
 
 ## Deploying to GitHub Pages
 
-<!-- remove this section (and the dependent sub-sections) if the repo is not enabled for metrics cllection --> 
+<!-- remove this section (and the dependent sub-sections) if the repo is not enabled for metrics collection -->
 # Privacy Notice
 <!-- No change required. Only link to the "master" privacy notice; this avoids duplication of content and -->
-<!-- conflictingf information should the underlying metrics infrastructure change -->
+<!-- conflicting information should the underlying metrics infrastructure change -->
 
 Refer to https://github.com/IBM/metrics-collector-service#privacy-notice.
 
@@ -253,7 +254,7 @@ To disable tracking, simply remove ``require('metrics-tracker-client').track();`
 * [Materialize CSS](http://materializecss.com/getting-started.html)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-<!-- If any of the resources below are relevant, update the list and uncomment this section. 
+<!-- If any of the resources below are relevant, update the list and uncomment this section.
 
 # Learn more
 
