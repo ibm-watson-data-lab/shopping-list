@@ -11,6 +11,7 @@ The Shopping List demo apps are brought to you by:
 * [Va Barbosa](https://github.com/vabarbosa)
 * [Glynn Bird](https://github.com/glynnbird)
 * [Juan Camacho](https://github.com/jcamach2)
+* [Teri Chadbourne](https://github.com/terichadbourne)
 * [Bradley Holt](https://github.com/bradley-holt)
 * [Nick Kasten](https://github.com/kastentx)
 * [Maureen McElaney](https://github.com/mmcelaney)
